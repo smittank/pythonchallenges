@@ -1,0 +1,5 @@
+Myage = 2000
+CelebritysName= input('Name of celebrity: ')
+CelebritysAge = int(input('When was this person born?'))
+AgeDifference = Myage - CelebritysAge
+print("%s is %d years older than you as he/she is born in %s" % (CelebritysName, AgeDifference, CelebritysAge))
