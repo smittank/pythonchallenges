@@ -1,0 +1,3 @@
+test=input("Is it raining? y/n")
+if test == "y":
+    print("oh dear, no football today!")
