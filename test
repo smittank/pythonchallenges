@@ -1,0 +1,4 @@
+Computerage=36.989
+Computername='Skynet'
+Myage=int(input('What is your age?'))
+print('I am older than %d, because I am %.3f My name is %s' % (Myage, Computerage, Computername))
