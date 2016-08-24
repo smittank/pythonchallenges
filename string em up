@@ -1,0 +1,7 @@
+MyList = ["Naruto", "Sasuke", "Sakura", "Neji", "Kakashi"]
+MyList.append("Gaara")
+MyList.remove("Neji")
+NewChara = input("Enter your favourite Naruto character")
+MyList.append(NewChara)
+MyList.sort()
+print(MyList[0:4],sep=",")
