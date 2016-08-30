@@ -1,0 +1,7 @@
+Mystring = "abcdef"
+print(Mystring)
+print(Mystring[0:3])
+print(Mystring[3::])
+print(Mystring[0:6:2])
+print(Mystring[-1:7:-1])
+print(Mystring[0:-2])
