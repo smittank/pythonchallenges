@@ -1,0 +1,12 @@
+import random
+i = 0
+Mynumber = random.randrange(0,100)
+while True:
+    Guess=int(input(("what is my number?")))
+    if Guess == Mynumber:
+        print("Did you cheat??")
+        break
+    elif Guess < Mynumber:
+        print("My number is bigger")
+    elif Guess > Mynumber:
+        print("My number is smaller")
