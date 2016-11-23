@@ -1,0 +1,40 @@
+def main():
+    pass
+
+if __name__ == '__main__':
+    main()
+
+timer = range(1,11)
+for counter in timer:
+    if counter == 7:
+        break
+    print(counter)
+    
+    def main():
+    pass
+
+if __name__ == '__main__':
+    main()
+
+myval = "a"
+
+def addMe(myInput):
+    a = 4
+    return myInput + 10;
+
+print("input\tOutput")
+print("-----\t------")
+for n in range(1, 11):
+    print(str(n) + "\t\t" + str(addMe(n)))
+    
+    def main():
+    pass
+
+if __name__ == '__main__':
+    main()
+
+
+v = ["a","b","c","d",7]
+
+print(len(v))
+print(v[2])
