@@ -1,0 +1,8 @@
+def hypotenuse():
+    x=10
+    y=8
+    squared=x**2+y**2
+    result=squared*0.5
+    return result
+
+print (hypotenuse())
