@@ -1,0 +1,59 @@
+#rock, paper, scissors PvC game
+user_score = 0
+newuser_score = int()
+newcomputer_score = int()
+computer_score = 0
+print("FIRST TO 5 WINS")
+newround = (newuser_score + newcomputer_score) + 1
+round = 0
+while newuser_score < 5 and newcomputer_score < 5:
+    print( "round %d" % newround)
+    winner = ''
+    import random
+    choices = ("r", "p", "s")
+    for i in range(0,1):
+        computer_input = random.choice(choices)
+        user_input = input("r(rock), p(papers) or s(scissors)? ")
+        if user_input == "r":
+            print("User: rock")
+        elif user_input == "s":
+            print("User: scissors")
+        elif user_input == "p":
+            print("User: " + "paper")
+        if computer_input == "r":
+            print("Computer: rock")
+        elif computer_input == "s":
+            print("Computer: scissors")
+        elif computer_input == "p":
+            print("Computer: paper")
+        if user_input == computer_input:
+            print("its a tie!")
+        elif user_input == "r" and computer_input == "s":
+            winner = "user"
+            print("You win!")
+        elif user_input == "p" and computer_input == "r":
+            winner = "user"
+            print("You win!")
+        elif user_input == "s" and computer_input == "p":
+            winner = "user"
+            print("You win!")
+        elif user_input == "r" and computer_input == "p":
+            winner = "computer"
+            print("Haha, loser!")
+        elif user_input == "p" and computer_input == "s":
+            winner = "computer"
+            print("Haha, loser!")
+        elif user_input == "s" and computer_input == "r":
+            winner = "computer"
+            print("Haha, loser!")
+        if winner == "user":
+            newuser_score = newuser_score + 1
+        if winner == "computer":
+            newcomputer_score = newcomputer_score + 1
+        newround = newround + 1
+        print("user: %d"  % newuser_score)
+        print("computer: %d"  % newcomputer_score)
+if newuser_score > newcomputer_score:
+    print("You win!!")
+else:
+    print("Better luck next time, NOOB!")
