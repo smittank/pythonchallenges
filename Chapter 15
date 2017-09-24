@@ -1,0 +1,33 @@
+"question 1"
+def distance(x1, y1, x2, y2):
+    dx = x2 - x1
+    dy = y2 - y1
+    dsquared = dx**2 + dy**2
+    result = math.sqrt(dsquared)
+    return result
+    
+"Question 2"
+
+
+"Question 3"
+class Point:
+    def __init__(self, initX, initY):
+        self.x = initX
+        self.y = initY
+
+    def getX(self):
+        return self.x
+
+    def getY(self):
+        return self.y
+
+    def distanceFromOrigin(self):
+        return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+    def slope_from_origin(self):
+        if self.x == 0:
+           return None
+        else:
+           return self.y / self.x
+p = Point(4, 10)
+print(p.slope_from_origin())
