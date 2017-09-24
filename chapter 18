@@ -1,0 +1,25 @@
+from turtle import *
+def snowflake(length, levels):
+    if levels == 0:
+        forward(length)
+        return
+    length /= 3.0
+    snowflake(length, levels-1)
+    left(60)
+    snowflake(length, levels-1)
+    right(120)
+    snowflake(length, levels-1)
+    left(60)
+    snowflake(length, levels-1)
+def full_snowflake(length, levels):
+    for i in range(3):
+        snowflake(length, levels)
+        right(120)
+if __name__ == "__main__":
+    speed(0)
+    length = 300.0
+    penup()
+    backward(length/2.0)
+    pendown()
+    full_snowflake(length, 4)
+    mainloop()
