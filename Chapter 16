@@ -9,7 +9,7 @@ class Point:
 
     def __str__(self):
         return  "({0}, {1})".format(self.x, self.y)
-
+# Exercise 1 ----------------------------------------------------
 class Rectangle:
     """ A class to manufacture rectangle objects """
 
@@ -28,7 +28,7 @@ class Rectangle:
         """ Move this object by the deltas """
         self.corner.x += dx
         self.corner.y += dy
-
+# Exercise 2 ----------------------------------------------------
     def area(self):
         area= self.width*self.height
         print(area)
@@ -36,13 +36,13 @@ class Rectangle:
     def perimeter(self):
         perimeter= self.width*2 + self.height*2
         print(perimeter)
-
+# Exercise 3 ----------------------------------------------------
     def flip(self):
         temp_1=self.width
         temp_2=self.height
         self.height=temp_1
         self.width=temp_2
-
+# Exercise 4 ----------------------------------------------------
     def point_check(self,posn):
         x=(posn.x)
         y=(posn.y)
@@ -54,7 +54,7 @@ class Rectangle:
             print('Outside')
         else:
             print('Inside')
-
+# Exercise 5 ----------------------------------------------------
     def colission_check(self,posn):
         x=(posn.x)
         y=(posn.y)
