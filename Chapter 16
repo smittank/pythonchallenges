@@ -9,7 +9,7 @@ class Point:
 
     def __str__(self):
         return  "({0}, {1})".format(self.x, self.y)
-# Exercise 1 ----------------------------------------------------
+        
 class Rectangle:
     """ A class to manufacture rectangle objects """
 
@@ -28,11 +28,11 @@ class Rectangle:
         """ Move this object by the deltas """
         self.corner.x += dx
         self.corner.y += dy
-# Exercise 2 ----------------------------------------------------
+# Exercise 1 ----------------------------------------------------
     def area(self):
         area= self.width*self.height
         print(area)
-
+# Exercise 2 ----------------------------------------------------
     def perimeter(self):
         perimeter= self.width*2 + self.height*2
         print(perimeter)
