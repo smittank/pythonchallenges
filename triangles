@@ -1,0 +1,39 @@
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+def draw(number):
+    x = 0
+    alex.left(60)
+    for i in range(number):
+        x += 30
+        for i in range(3):
+            alex.forward(x)
+            alex.right(120)
+    alex.right(60)
+    alex.forward(number*30)
+    alex.left(180)
+    x = 0
+    for i in range(number):
+        x += 30
+        for i in range(3):
+            alex.forward(x)
+            alex.right(120)
+    x = number*30
+    alex.forward(x)
+    alex.right(120)
+    digit = int(number)
+    if digit % 2 == 0:
+        digit = digit//2
+    else:
+        digit = (digit - 1)//2
+    for i in range(digit):
+        alex.forward(30)
+        alex.right(60)
+        alex.forward(x-30)
+        alex.left(120)
+        alex.forward(30)
+        alex.left(60)
+        alex.forward(x-60)
+        alex.right(120)
+        x -= 60
+draw(7)
