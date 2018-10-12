@@ -1,0 +1,17 @@
+def find(elem, seq):
+    Found = False
+    position = 0
+    length = len(seq)
+    seq_list = []
+
+    while Found == False:
+        for i in range(0, length):
+            if seq[i] == elem:
+                Found = True
+                print(i)
+                break
+        if Found == False:
+            print("-1")
+            break
+
+find("5", ["8", "9", "3", "1", "5"])
