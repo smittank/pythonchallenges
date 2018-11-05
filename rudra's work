@@ -1,0 +1,10 @@
+def log(a, b):
+    # a is the base, and b is the answer
+    x = 0
+    for i in range(b//a):
+        if b%a == 0:
+            b = b//a
+            x += 1
+    print(x)
+
+log(5, 125)
